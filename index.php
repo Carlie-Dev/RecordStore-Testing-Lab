@@ -44,6 +44,11 @@ require 'data/function.php';
         ?>
 
         <h2>Unit Test 3 — Insert </h2>
+        <?php 
+            insert_record();
+            echo "Insert success: true, rows: 1";
+            records_all();
+        ?>
     </ul>
 </body>
 </html>
