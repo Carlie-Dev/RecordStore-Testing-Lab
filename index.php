@@ -37,7 +37,7 @@ require 'data/function.php';
         }
         
     ?>
-    <!-- <ul>
+    <ul>
         <h2>Unit Test 1 — Formats</h2>
         <?php 
         $formats = formats_all();
@@ -74,6 +74,6 @@ require 'data/function.php';
             //insert_record();
             echo "Insert success: true, rows: 1";
         ?>
-    </ul> -->
+    </ul>
 </body>
 </html>
