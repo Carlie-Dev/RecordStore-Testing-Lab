@@ -1,6 +1,6 @@
 <?php 
 echo "This is the records form view";
-echo '<a href="?view=Create">Created Test</a>';
+echo '<a href="?view=created">Created Test</a>';
 
 include 'data/function.php';
 echo "<form action='' method='get'>";
@@ -17,7 +17,7 @@ foreach ($formats as $format) {
     echo '<option value="' . htmlspecialchars($format['id']) . '">' . htmlspecialchars($format['name']) . '</option>';
 }
 echo '</select><br>';
-echo '<input type="submit" value="Create">';
+echo '<input type="submit" value="created">';
 echo "<input type='hidden' name='view' value='created'>";
 echo "</form>";
 
