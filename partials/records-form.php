@@ -1,5 +1,7 @@
 <?php 
 echo "This is the records form view";
+echo '<a href="?view=Create">Created Test</a>';
+
 include 'data/function.php';
 echo "<form action='' method='get'>";
 echo "<label for='title'>Title:</label>";

@@ -19,12 +19,21 @@ require 'data/function.php';
         //Get view parameter
         $view = $_GET['view'] ?? 'list';
         //Includes the appropriate partial based on the view
-        if ($view === 'list') {
-            include 'partials/records-list.php';
-        } elseif ($view === 'create') {
-            include 'partials/records-form.php';
-        } else {
-            echo "Page Could Not Be Found";
+
+        switch ($view) {
+            case 'created':
+                include 'partials/record-created.php';
+                break;
+            case 'list':
+                include 'partials/records-list.php';
+                break;
+            case 'create':
+                include 'partials/records-form.php';
+                break;
+            default:
+                include 'partials/records-list.php';
+                break;
+            
         }
         
     ?>
