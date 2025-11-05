@@ -1,6 +1,8 @@
 <?php 
 //record store test
 require 'data/function.php';
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +14,21 @@ require 'data/function.php';
 <body>
     <h1>Record Formats</h1>
     <?php include 'components/nav.php'; ?>
-    <ul>
+
+    <?php 
+        //Get view parameter
+        $view = $_GET['view'] ?? 'list';
+        //Includes the appropriate partial based on the view
+        if ($view === 'list') {
+            include 'partials/records-list.php';
+        } elseif ($view === 'create') {
+            include 'partials/records-form.php';
+        } else {
+            echo "Page Could Not Be Found";
+        }
+        
+    ?>
+    <!-- <ul>
         <h2>Unit Test 1 — Formats</h2>
         <?php 
         $formats = formats_all();
@@ -49,6 +65,6 @@ require 'data/function.php';
             //insert_record();
             echo "Insert success: true, rows: 1";
         ?>
-    </ul>
+    </ul> -->
 </body>
 </html>
