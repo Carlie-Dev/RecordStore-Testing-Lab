@@ -14,15 +14,15 @@
         return $stmt->fetchAll();
     }
 
-    function insert_record(): void {
-        $title = "Actung Baby";
-        $artist = "U2";
-        $price = 60.0;
-        $format_id= 1;
-        $genre_id = 1;
+    // function insert_record(): void {
+    //     $title = "Actung Baby";
+    //     $artist = "U2";
+    //     $price = 60.0;
+    //     $format_id= 1;
+    //     $genre_id = 1;
     
-        $pdo = get_pdo();
-        $stmt = $pdo->prepare('INSERT INTO records (title, artist, price, format_id, genre_id) VALUES (:title, :artist, :price, :format_id, :genre_id)');
-        $stmt->execute([$title, $artist, $price, $format_id, $genre_id]);
-    }
+    //     $pdo = get_pdo();
+    //     $stmt = $pdo->prepare('INSERT INTO records (title, artist, price, format_id, genre_id) VALUES (:title, :artist, :price, :format_id, :genre_id)');
+    //     $stmt->execute([$title, $artist, $price, $format_id, $genre_id]);
+    // }
 ?>

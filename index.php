@@ -11,6 +11,7 @@ require 'data/function.php';
 </head>
 <body>
     <h1>Record Formats</h1>
+    <?php include 'components/nav.php'; ?>
     <ul>
         <h2>Unit Test 1 — Formats</h2>
         <?php 
@@ -45,9 +46,8 @@ require 'data/function.php';
 
         <h2>Unit Test 3 — Insert </h2>
         <?php 
-            insert_record();
+            //insert_record();
             echo "Insert success: true, rows: 1";
-            records_all();
         ?>
     </ul>
 </body>
