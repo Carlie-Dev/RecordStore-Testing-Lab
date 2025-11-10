@@ -23,11 +23,11 @@
     }
     // Insert a new record into the database
     function insert_record($title, $artist, $price, $format_id,$genre_id): void {
-        // $title = "";
-        // $artist = "";
-        // $price = 0.0;
-        // $format_id= 1;
-        // $genre_id = 1;
+        $title = $title;
+        $artist = $artist;
+        $price = $price;
+        $format_id= $format_id;
+        $genre_id = $genre_id;
     
         $pdo = get_pdo();
         $stmt = $pdo->prepare('INSERT INTO records (title, artist, price, format_id, genre_id) VALUES (:title, :artist, :price, :format_id, :genre_id)');

@@ -18,6 +18,7 @@ require 'data/function.php';
         //Get view parameter
         $view   = filter_input(INPUT_GET, 'view') ?: 'list';
         $action = filter_input(INPUT_POST, 'action');
+        echo $action;
 
         //NAVIGATION
         include __DIR__ . '/components/nav.php';

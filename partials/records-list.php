@@ -1,5 +1,4 @@
 <?php 
-    echo "this is the records list view";
     $records = records_all();
 ?>
 <html>
