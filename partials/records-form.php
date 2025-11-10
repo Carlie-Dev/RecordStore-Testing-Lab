@@ -29,7 +29,7 @@
                     }
                 ?>
             </select><br>
-            <input type="hidden" name="action" value="create">
+            <input type="hidden" name="action" value="created">
 
             <div class="col-12">
                 <button class="btn btn-success">Create</button>
